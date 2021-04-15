@@ -1,0 +1,126 @@
+/* This is my external css for my journal enteries */
+      
+body {
+  background-color: lightblue; /* Added background color to body */
+}
+
+*{ /*universal selector*/
+    text-align: center;
+}
+
+a[target=_blank]{ /*attribute selector*/
+    background-color: yellow;
+}
+
+#paragraph{ /*id selector*/
+    background-color: rgb(255, 255, 255);
+}
+
+a:hover{ /*pseudo-class selector*/
+    background-color: blueviolet; /*pseudo class: hover*/
+}
+
+p { /*element selector*/ 
+    font-size: 0.5cm; /* absolute unit 1 */
+    line-height: 1cm;
+    display:inline; /* display inline */
+    position:static; /* position static */
+    font-family: "Sofia", sans-serif; /*font from google, link rel in html file*/
+  }
+
+  h1 {
+      text-align: center; /* text align */
+      font-size: 15mm; /* absolute unit 2 */
+      position: absolute;
+      top: 0
+    } 
+
+  h2 {
+      font-size: 0.35in; /* absolute unit 3 */
+  }
+
+  span {
+    font-size: 0.5em; /* relative unit 1 */
+    display: none; /* hides random use of span, */
+  }
+
+  h3, h4{ /*selector list*/
+    font-size: 1.5vw; /* relative unit 2 */
+    text-decoration: underline; /* text decoration */
+    color: black;
+  }
+
+  h5 {
+    color:blueviolet; /* text color */
+    font-size: 3vh; /* relative unit 3 */
+  }
+
+  div {
+    width: 550px;
+    border: 10px dashed rgb(0, 0, 0); /* box model */
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+
+  div p { /*descendant combinator*/
+      background-color: burlywood;
+  }
+
+  div > h5 { /*child combinator*/
+      background-color: coral;
+  }
+
+  div ~ h3 { /*general sibling combinator*/
+      background-color: rgb(5, 189, 189);
+  }
+
+  div + h2 { /*Adjacent sibling combinator*/
+      background-color:red;
+  }
+
+  ul{
+      max-width: 300px; /*sizing of an element */ 
+      max-height: 300px;
+  }
+
+  .flex-container { /*class selector*/
+    display: flex; /*flex box*/
+    /*background-color: rgb(243, 0, 223);*/
+  }
+  
+  .flex-container > div { /*flex box*/
+    background-color: #ff00f2;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .grid-container { /*grid */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    background-color: #00ff00;
+    padding: 10px;
+  }
+
+  .grid-container > ul { /* grid */ 
+    /*background-color: rgba(255, 0, 0, 0.8);*/
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  @media only screen and (max-width: 800px) { /*responsiveness*/
+    body {
+      background-color: rgb(255, 0, 0);
+    }
+  }
+  
+  .modal.modal-pink {
+    background-color:pink ;
+  }
+  

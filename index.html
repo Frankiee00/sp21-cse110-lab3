@@ -4,14 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="jak.ico">
+        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> 
+        <style>
+            a:active{
+                background-color: chartreuse; /*pseudo class: active*/
+            }
+        </style>
         <title>Journal Entries</title>
+
     </head>
     <body>
         <header>
             <div> <h1>JOURNAL ENTRIES</h1></div>
             <nav>
               <ul>
-                <li><a href="#Monday">Monday Journal Entry</a></li>
+                <li><a href="#Monday" target="_blank">Monday Journal Entry</a></li>
                 <li><a href="#Tuesday">Tuesday Journal Entry</a></li>
                 <li><a href="#Today">Today's Journal Entry</a></li>
               </ul>
@@ -19,6 +27,7 @@
           </header>
 
         <main>
+            <div></div>
             <h2 id="Monday"> Monday Journal Entry</h2>
             <h2> April 5th, 2021 </h2>
             <h3> List of Things to Do</h3>
@@ -27,20 +36,22 @@
                 <li> Pay Your Credit Card</li>
                 <li> Go Get Groceries</li>
             </ul>
-            <h3> Highlights</h3>
-            <ul>
-                <li> I ate Canes!</li>
+            <h3 class="modal modal-pink"> Highlights</h3>
+            <ul class="grid-container">
+                <li>I ate Canes!</li>
                 <li> Woke up still alive! </li>
                 <li> First day of work for Spring Quarter.</li>
             </ul>
             <h3> Lowlights</h3>
-            <ul>
-                <li> I had to go to work.</li>
-                <li> I had to pay my credit card.</li>
-                <li> I was unable to read my book.</li>
-            </ul>
+            <div class="flex-container">
+                <div> I had to go to work.</div>
+                <div>I had to pay my credit card.</div>
+                <div> I was unable to read my book.</div>
+                </ul>
+            </div>
+            
             <h3>Entry</h3>
-            <p>
+            <p id="paragraph">
                 Monday was an interesting day to say the least, it started off with me eating a donut. Then I had to complete my list of tasks as above. After that, I proceed to go pay my credit card which was a decent amount of money and I slowly watched the money leave my bank account and started to <em>cry a bit</em>, just kidding, or am I? (dun-dun) Then I had to go to work which is always an experience and you know its cool and all but can be time-consuming sometimes. However, after work and classes, I was able to go eat Canes, which is one of my favorite foods! Then I went to bed and it was time to have some dreams! 
             </p>
   
@@ -88,6 +99,7 @@
                 <li> I got a good mile time! </li>
                 <li> Was able to accomplish my tasks for the day!</li>
             </ol>
+            
             <h3> Lowlights</h3>
             <ul>
                 <li> HW took a lot of time. </li>
@@ -97,9 +109,11 @@
             
             <section>
                 <h3>Entry</h3>
+                <div>
                 <p>
                     Tuesday was another <i>great day</i> and it started it with a nice Berry Smoothie from The Market at 7th. Then I had to complete my list of tasks as above. My homework took a long portion of my day. As well as, having class the whole day, I was just a super busy person. <br> After, I had finished classes and homework, I did have some free time. I used the time to go on a run and got a 7 minute mile. I am pretty impressed with myself to say the least. Then I was deliever tacos by my lover and the tacos were great! After all that, it was time to hit the sheets.
                 </p> 
+                </div>
             </section>
            
   
@@ -118,7 +132,10 @@
               <img src="scarydog.JPG" alt=""  width="500" height="500" />
           </picture>
           
-          <h5>Here is a video from Spring Break, that I like.</h5>
+          <div>
+            <h5>Here is a video from Spring Break, that I like.</h5> 
+          </div>
+          
 
           <video controls width="250">
               <source src="oregon.MP4"
